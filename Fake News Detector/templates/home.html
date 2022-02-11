@@ -1,0 +1,148 @@
+<html>
+
+<head>
+    <title>Fake News Detector</title>
+    <meta name="og:title" content="Fake News Detector">
+    <meta name="author" content="Rohit Sahu">
+    <link rel="icon" href="../static/logo2.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html{
+            position: relative;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            font-family: 'Rokkitt', serif;
+            justify-content: space-evenly;
+        }
+        .container .title{
+            font-family: 'Acme', sans-serif;
+            font-size: 55px;
+        }
+        nav .nav-title{
+            color: white;
+            font-family: 'Lobster Two', cursive;
+            font-size: 30px;
+        }
+        .navbar-nav .nav-item{
+            font-size: 20px;
+        }
+        .about{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .card-body{
+            border: 2px solid darkmagenta;
+            box-shadow: 0 0 5px darkviolet;
+        }
+        .card-body:hover{
+            box-shadow: 0 0 10px darkviolet;
+        }
+        textarea{
+            border: 2px solid darkmagenta;
+        }
+        ul li{
+            display: inline;
+            list-style: none;
+        }
+        .body-links .fa {
+            color: darkmagenta !important;
+            font-size: 30px;
+        }
+        a:hover{
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .body-links .fa:hover{
+            text-shadow: 0 0 10px purple;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #563d7c;">
+        <a class="nav-title" href="">Fake News Detector</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a href="https://github.com/rohitsahu70" target="_blank" class="nav-link"><span style="font-size: 25px;" class="fa fa-github"></span>&nbsp;Github</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="https://www.linkedin.com/in/rohit-sahu-797657206/" target="_blank" class="nav-link"><span style="font-size: 25px;" class="fa fa-linkedin"></span>&nbsp;LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br><br>
+    {% if fake_flag %}
+        <div class="container">
+        <center>
+            <div class="alert alert-danger">
+                <b>{{ message }}</b>
+            </div>
+        </center>
+        </div>
+    {% endif %}
+    {% if non_fake_flag %}
+        <div class="container">
+        <center>
+            <div class="alert alert-success">
+                <b>{{ message }}</b>
+            </div>
+        </center>
+        </div>
+    {% endif %}
+    {% if danger %}
+        <div class="container">
+        <center>
+            <div class="alert alert-danger">
+                <b>{{ message }}</b>
+            </div>
+        </center>
+        </div>
+    {% endif %}
+    <div class="container">
+        <center><h1 class="title">FAKE NEWS DETECTOR</h1></center>
+        <center><p class="about">An NLP and Machine Learning based web application for Fake News Prediction</p></center>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <form class="card card-body" action="" method="POST">
+                    <textarea rows="10" name="news" placeholder="Enter the news here..."></textarea><br>
+                    <button class="btn btn-primary"><b>PREDICT</b></button>
+                </form>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <center>
+                    <ul>
+                        <li><a href="https://github.com/rohitsahu70" class="body-links" target="_blank"><span class="fa fa-github"></span>&nbsp;&nbsp;</a></li>
+                        <li><a href="https://www.linkedin.com/in/rohit-sahu-797657206/" class="body-links" target="_blank"><span class="fa fa-linkedin"></span>&nbsp;&nbsp;</a></li>
+                        <li><a href="https://mobile.twitter.com/RohitSa65942986" class="body-links" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                    </ul>
+                </center>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</body>
+</html>
