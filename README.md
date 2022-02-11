@@ -15,6 +15,7 @@ https://user-images.githubusercontent.com/89459208/153448340-22b3ad39-1e1f-48ea-
 ## Mini Project 2
 <b>Fake News Detection</b><br>
 Created Fake News Detection web application using NLP, Machine Learning and Flask web framework and deployed on Heroku.<br/>
+<b>Dataset Link:[CLICK HERE](https://www.kaggle.com/c/fake-news/data)<b><br/>
 <b>More : [CLICK HERE](https://github.com/rohitsahu70/MACHINE-LEARNING-INTERN-AT-GRROOM/tree/main/Fake%20News%20Detector)<b>
   
 ## Live Demo of Mini Project 2
