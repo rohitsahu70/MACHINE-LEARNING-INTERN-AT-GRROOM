@@ -32,8 +32,8 @@ Created SMS Spam Detction web application using NLP, Machine Learning and Flask 
 ## Final Project
 <b>Face Emotion Recognition</b><br>
 Created a Web Application for Face Emotion Recognition
-Under this project we were given a Face Emotion Users Data, which contained 35887 images of people showing 7 unique emotions: Anger, Happy, Disgust, Sad, Surprise, Neutral and Fear.
-<b>Dataset Link:[CLICK HERE](https://www.kaggle.com/deadskull7/fer2013)</b>
+Under this project we were given a Face Emotion Users Data, which contained 35887 images of people showing 7 unique emotions: Anger, Happy, Disgust, Sad, Surprise, Neutral and Fear.<br/>
+<b>Dataset Link:[CLICK HERE](https://www.kaggle.com/deadskull7/fer2013)<b><br/>
 <b>More : [CLICK HERE](https://github.com/rohitsahu70/MACHINE-LEARNING-INTERN-AT-GRROOM/tree/main/Face%20Emotion%20Recognition)<b>
   
 ## Live Demo of Mini Project 2
