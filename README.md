@@ -15,7 +15,7 @@ https://user-images.githubusercontent.com/89459208/153448340-22b3ad39-1e1f-48ea-
 ## Mini Project 2
 <b>Fake News Detection</b><br>
 Created Fake News Detection web application using NLP, Machine Learning and Flask web framework and deployed on Heroku.<br/>
-<b>More : [CLICK HERE](https://github.com/rohitsahu70/MACHINE-LEARNING-INTERN-AT-GRROOM/tree/main/Face_Emotion_Recognition-master)<b>
+<b>More : [CLICK HERE](https://github.com/rohitsahu70/MACHINE-LEARNING-INTERN-AT-GRROOM/tree/main/Fake%20News%20Detector)<b>
   
 ## Live Demo of Mini Project 2
 
@@ -26,13 +26,15 @@ https://user-images.githubusercontent.com/89459208/153451566-51f4f8d5-fba8-4246-
 Created SMS Spam Detction web application using NLP, Machine Learning and Flask web framework and deployed on Heroku.<br/>
 <b>More : [CLICK HERE]()<b>
   
-## Live Demo of Mini Project 2
+## Live Demo of Mini Project 3
   
   
 ## Final Project
 <b>Face Emotion Recognition</b><br>
-The dataset contains 35887 images of people showing 7 unique emotions: Anger, Happy, Disgust, Sad, Surprise, Neutral and Fear..<br/>
-<b>More : [CLICK HERE]()<b>
+Created a Web Application for Face Emotion Recognition
+Under this project we were given a Face Emotion Users Data, which contained 35887 images of people showing 7 unique emotions: Anger, Happy, Disgust, Sad, Surprise, Neutral and Fear.
+<b>Dataset Link:[CLICK HERE](https://www.kaggle.com/deadskull7/fer2013)</b>
+<b>More : [CLICK HERE](https://github.com/rohitsahu70/MACHINE-LEARNING-INTERN-AT-GRROOM/tree/main/Face%20Emotion%20Recognition)<b>
   
 ## Live Demo of Mini Project 2
  
